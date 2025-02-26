@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace MathieuDumoutier\OAuth2\Client\Provider;
+namespace Inetum\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Provider\ResourceOwnerInterface;
 use League\OAuth2\Client\Token\AccessToken;
-use MathieuDumoutier\OAuth2\Client\Exception\OrcidIdentityProviderException;
-use MathieuDumoutier\OAuth2\Client\Provider\OrcidResourceOwner;
+use Inetum\OAuth2\Client\Exception\OrcidIdentityProviderException;
+use Inetum\OAuth2\Client\Provider\OrcidResourceOwner;
 use Psr\Http\Message\ResponseInterface;
 
 class Orcid extends AbstractProvider

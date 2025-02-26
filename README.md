@@ -7,12 +7,12 @@ This package provides ORCID OAuth 2.0 support for the PHP League's [OAuth 2.0 Cl
 To install, use composer:
 
 ```
-composer require mathieu-dumoutier/oauth2-orcid
+composer require jsambon-inetum/oauth2-orcid
 ```
 
 ## Usage
 
-Usage is the same as The League's OAuth client, using `\MathieuDumoutier\OAuth2\Client\Provider\Orcid` as the provider.
+Usage is the same as The League's OAuth client, using `\Inetum\OAuth2\Client\Provider\Orcid` as the provider.
 
 ## knpuniversity/oauth2-client-bundle configuration example
 
@@ -21,7 +21,7 @@ knpu_oauth2_client:
     clients:
         orcid_oauth:
             type: generic
-            provider_class: MathieuDumoutier\OAuth2\Client\Provider\Orcid
+            provider_class: Inetum\OAuth2\Client\Provider\Orcid
             provider_options:
                 "scopes": '%env(ORCID_OAUTH_SCOPES)%'
                 "use_member_api": '%env(ORCID_OAUTH_SANDBOX_MODE)%'
